@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producción Musical</title>
+    <style>
+        /* Estilos CSS pueden ser agregados aquí */
+        body {
+            font-family: 'Century Gothic', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #262f31;
+            color: #c4c6d9;
+        }
+        .container {
+            text-align: center;
+            max-width: 750px;
+            margin: 0 auto;
+        }
+        .title {
+            font-family: 'Open Sans Semicondensed', sans-serif;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            color: #c4c6d9;
+        }
+        .subtitle {
+            font-family: 'Open Sans Semicondensed', sans-serif;
+            font-weight: 600;
+            font-size: 2rem;
+            color: #c4c6d9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .description {
+            color: #c4c6d9;
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 0.875rem;
+            line-height: 1.6;
+        }
+        .grid {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+        .feature {
+            border-radius: 10px;
+            background: linear-gradient(180deg,rgb(42,44,63) 49%,rgb(29,29,45) 100%);
+            padding: 30px;
+            color: #c4c6d9;
+            text-align: left;
+            flex: 1;
+            max-width: 500px;
+            transition: all 0.3s ease; /* Transición suave al cambiar propiedades */
+        }
+        .feature:hover {
+            transform: translateY(-5px); /* Efecto de levantar al pasar el cursor */
+        }
+        .feature img {
+            width: 90%;
+            display: block;
+            margin: 0 auto;
+            max-width: 150px;
+        }
+        .feature h2 {
+            font-family: 'Open Sans Semicondensed', sans-serif;
+            font-weight: 600;
+            font-size: 1.5rem;
+            color: #c4c6d9;
+            transition: color 0.3s ease; /* Transición de color suave */
+        }
+        .feature p {
+            color: #c4c6d9;
+            max-width: 500px;
+            margin: 0 auto;
+            font-size: 0.875rem;
+            line-height: 1.6;
+            transition: color 0.3s ease; /* Transición de color suave */
+        }
+        /* Estilos para la barra de navegación */
+        .navbar {
+            background-color: white;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-around;
+            animation: fadeIn 1s ease; /* Animación de entrada */
+        }
+        .navbar a {
+            text-decoration: none;
+            color: #262f31;
+            font-weight: bold;
+        }
+
+        /* Animación de entrada */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de navegación -->
+<div class="navbar">
+    <a href="sign in.html" title="Inicia sesión aquí">Sign In</a>
+    <a href="Help.html" title="Obtén ayuda y soporte">Help</a>
+    <a href="Overview.html" title="Vista general del sitio">Overview</a>
+    <a href="compare.html" title="Compara las diferentes ediciones">Compare Editions</a>
+    <a href="Download.html" title="Descarga el software">Download</a>
+    <a href="Buy.html" title="Compra ahora">Buy Now</a>
+</div>
+
+    <div class="container">
+        
+        <h2 class="subtitle">Producción Musical</h2>
+        <p class="grid">Descubre el fascinante mundo de la producción musical</p>
+
+        <div class="grid">
+            <div class="feature">
+                <h2>Introducción</h2>
+                <p>Componer una canción es, de hecho, muy simple: piensas en una melodía y agregas la letra. Ahora, el proceso para que esa canción llegue hasta el público es una historia completamente diferente. La producción musical es la piedra angular de este proceso y, por ello, hoy te explicamos qué es producción musical.</p>
+                <p>La producción musical es el proceso de creación y manipulación de sonido para crear música. Implica la grabación, edición, mezcla y masterización de pistas de audio para producir canciones y otros tipos de composiciones musicales.</p>
+                <p>La producción musical puede realizarse en estudios de grabación profesionales o en entornos domésticos utilizando software especializado.</p>
+            </div>
+            <div class="feature" style="background: linear-gradient(180deg,rgb(42,44,63) 49%,rgb(29,29,45) 100%)">
+                <h2>Equipamiento</h2>
+                <p>Para llevar a cabo la producción musical, se necesitan diversos equipos y herramientas, que pueden incluir:</p>
+                <ul>
+                    <li>Computadora con software de producción musical (por ejemplo, Ableton Live, FL Studio, Pro Tools).</li>
+                    <li>Interfaz de audio.</li>
+                    <li>Monitores de estudio.</li>
+                    <li>Micrófonos.</li>
+                    <li>Teclado MIDI.</li>
+                    <li>Controlador de pads.</li>
+                </ul>
+                <img src="./Imagenes/Que-es-la-produccion-musical.jpg">
+            </div>
+            <div class="feature" style="background-color: #262f31">
+                <h2>Tecnologías</h2>
+                <p>La producción musical se beneficia enormemente de los avances tecnológicos. Algunas tecnologías importantes en este campo incluyen:</p>
+                <ul>
+                <li>Software de grabación y edición de audio.</li>
+                <li>Plug-ins de efectos y procesadores de señal.</li>
+                <li>Controladores MIDI.</li>
+                <li>Interfaces de audio de alta calidad.</li>
+                </ul>
+                <img src="./Imagenes/images.jpg">
+                </div>
+                <div class="feature" style="background-color: #262f31">
+                <h2>Procesos de Producción</h2>
+                <p>La producción musical implica varios procesos que van desde la preproducción hasta la distribución. Algunos de estos procesos incluyen:</p>
+                    <ul>
+                        <li><strong>Preproducción:</strong> Planificación de la grabación, composición de canciones y selección de repertorio.</li>
+                        <li><strong>Grabación:</strong> Captura de las pistas de audio utilizando micrófonos y otros equipos.</li>
+                        <li><strong>Edición:</strong> Ajuste de la duración, tono y otros parámetros de las pistas de audio.</li>
+                        <li><strong>Mezcla:</strong> Combinación de varias pistas de audio en una mezcla estéreo o surround.</li>
+                        <li><strong>Masterización:</strong> Proceso final de optimización de la mezcla para su distribución.</li>
+                        <li><strong>Distribución:</strong> Publicación y difusión de la música a través de plataformas digitales y físicas.</li>
+                        </ul>
+                        </div>
+                        <div class="feature" style="background-color: #262f31">
+                        <h2>Programas de Producción Musical</h2>
+                        <p>Existen numerosos programas de producción musical que se utilizan en la industria. Algunos de los más populares son:</p>
+                        <ul>
+                        <li><strong>Ableton Live:</strong> Software versátil para la producción musical en vivo y en estudio.</li>
+                        <li><strong>FL Studio:</strong> Estación de trabajo de audio digital con un enfoque en la creación de ritmos y melodías.</li>
+                        <li><strong>Pro Tools:</strong> Potente software de grabación, edición y mezcla utilizado en estudios profesionales.</li>
+                        <li><strong>Logic Pro:</strong> DAW exclusivo para macOS con una amplia gama de herramientas de producción musical.</li>
+                        <li><strong>Reason:</strong> Software que simula equipos de estudio de grabación analógicos.</li>
+                        </ul>
+                        <img src="./Imagenes/Maxresdefault.webp">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </body>
+        </html>
+        

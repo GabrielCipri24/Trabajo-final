@@ -1,0 +1,143 @@
+
+ALUMNO@SALAD-10 MINGW64 ~/Desktop/Pagina
+$ git clone https://github.com/GabrielCipri24/pagina-chida.git
+Cloning into 'pagina-chida'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+ALUMNO@SALAD-10 MINGW64 ~/Desktop/Pagina
+$ cd pagina-chida
+
+ALUMNO@SALAD-10 MINGW64 ~/Desktop/Pagina/pagina-chida (main)
+$ git branch tacos
+
+ALUMNO@SALAD-10 MINGW64 ~/Desktop/Pagina/pagina-chida (main)
+$ git checkout tacos
+Switched to branch 'tacos'
+
+ALUMNO@SALAD-10 MINGW64 ~/Desktop/Pagina/pagina-chida (tacos)
+$ gti status
+bash: gti: command not found
+
+ALUMNO@SALAD-10 MINGW64 ~/Desktop/Pagina/pagina-chida (tacos)
+$ git status
+On branch tacos
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        prueba.html
+        tacos-al-pastor-receta.jpg
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ALUMNO@SALAD-10 MINGW64 ~/Desktop/Pagina/pagina-chida (tacos)
+$ git add .
+
+ALUMNO@SALAD-10 MINGW64 ~/Desktop/Pagina/pagina-chida (tacos)
+$ git status
+On branch tacos
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   prueba.html
+        new file:   tacos-al-pastor-receta.jpg
+
+
+ALUMNO@SALAD-10 MINGW64 ~/Desktop/Pagina/pagina-chida (tacos)
+$ git commit -m "tacos de pastor"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'ALUMNO@SALAD-10.(none)')
+
+ALUMNO@SALAD-10 MINGW64 ~/Desktop/Pagina/pagina-chida (tacos)
+$ ^C
+
+ALUMNO@SALAD-10 MINGW64 ~/Desktop/Pagina/pagina-chida (tacos)
+$ git config --global user.email "gabrielcipri15@gmail.com"
+
+ALUMNO@SALAD-10 MINGW64 ~/Desktop/Pagina/pagina-chida (tacos)
+$ git commit -m "tacos de pastor"
+[tacos a24a9df] tacos de pastor
+ 2 files changed, 1 insertion(+)
+ create mode 100644 prueba.html
+ create mode 100644 tacos-al-pastor-receta.jpg
+
+ALUMNO@SALAD-10 MINGW64 ~/Desktop/Pagina/pagina-chida (tacos)
+$ git push origin tacos
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 47.31 KiB | 47.31 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'tacos' on GitHub by visiting:
+remote:      https://github.com/GabrielCipri24/pagina-chida/pull/new/tacos
+remote:
+To https://github.com/GabrielCipri24/pagina-chida.git
+ * [new branch]      tacos -> tacos
+
+ALUMNO@SALAD-10 MINGW64 ~/Desktop/Pagina/pagina-chida (tacos)
+$ git branch
+  main
+* tacos
+
+ALUMNO@SALAD-10 MINGW64 ~/Desktop/Pagina/pagina-chida (tacos)
+$ git status
+On branch tacos
+nothing to commit, working tree clean
+
+ALUMNO@SALAD-10 MINGW64 ~/Desktop/Pagina/pagina-chida (tacos)
+$ git status
+On branch tacos
+nothing to commit, working tree clean
+
+ALUMNO@SALAD-10 MINGW64 ~/Desktop/Pagina/pagina-chida (tacos)
+$ git status
+On branch tacos
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   prueba.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ALUMNO@SALAD-10 MINGW64 ~/Desktop/Pagina/pagina-chida (tacos)
+$ git add .
+
+ALUMNO@SALAD-10 MINGW64 ~/Desktop/Pagina/pagina-chida (tacos)
+$ git status
+On branch tacos
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   prueba.html
+
+
+ALUMNO@SALAD-10 MINGW64 ~/Desktop/Pagina/pagina-chida (tacos)
+$ git commit -m "tacos de pastor2"
+[tacos 94b8c96] tacos de pastor2
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+ALUMNO@SALAD-10 MINGW64 ~/Desktop/Pagina/pagina-chida (tacos)
+$ git push origin tacos
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 385 bytes | 385.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/GabrielCipri24/pagina-chida.git
+   a24a9df..94b8c96  tacos -> tacos
+
+ALUMNO@SALAD-10 MINGW64 ~/Desktop/Pagina/pagina-chida (tacos)
+$
